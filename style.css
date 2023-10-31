@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #111;
+    color: #eee;
+    font-family:
+        "Encode Sans Semi Expanded",
+        "Noto Sans",
+        Roboto,
+        Helvetica,
+        arial,
+        sans-serif;
+    font-size: 16px;
+}
+
+header,
+main,
+footer {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+}
+
+.content {
+    width: 100%;
+    max-width: 92rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    padding: 0 15px;
+}
+
+header {
+    background-color: #f65400;
+}
+
+header .content {
+    padding: 50px 0;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 5rem;
+}
+
+header p {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+main {
+    height: 100%;
+}
+
+main .e {
+    margin: 25px 0 50px;
+}
+
+main .e h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+main .e p {
+    font-size: 1.2rem;
+}
+
+main .faq {
+    margin: 25px 0;
+}
+
+main .qa {
+    margin: 25px 0;
+}
+
+main .qa .q {
+    margin: 10px 0;
+}
+
+.buttons {
+    margin: 20px 15px 0;
+}
+
+button {
+    margin-right: 10px;
+    padding: 10px;
+    background-color: #06f;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    transition: background-color ease-in-out .2s;
+}
+
+button:hover {
+    background-color: #04d;
+    cursor: pointer;
+}
+
+button:active,
+/* button:focus, */
+/* button:target, */
+button:focus-within {
+    background-color: #04d;
+    transition: background-color 100ms linear;
+    cursor: wait;
+}
+
+.btn-discord {
+    background-color: #555;
+}
+
+.btn-discord:hover {
+    background-color: #333 !important;
+}
+
+footer {
+    bottom: 0;
+    position: absolute;
+    height: 100px;
+    background-color: #000 !important;
+}
+
+@media screen and (orientation:portrait) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    main .e {
+        margin: 0 0 30px;
+    }
+
+    main .e h2 {
+        font-size: 1.5rem;
+        margin: 10px 0;
+    }
+
+    main .e p {
+        font-size: 1rem;
+    }
+}
