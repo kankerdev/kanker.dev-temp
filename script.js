@@ -10,8 +10,8 @@ const redirectAlt = () => {
         case "/search.html":
             const q = urlParams.get(`q`);
             if (q == null)
-                window.location.href = "https://search.bus-hit.me/";
-            window.location.href = `https://search.bus-hit.me/search?q=${q}`;
+                window.location.href = "https://offtheradar.info/";
+            window.location.href = `https://offtheradar.info/search?q=${q}`;
             break;
 
         case "/watch":
